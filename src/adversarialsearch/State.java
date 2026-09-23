@@ -32,7 +32,7 @@ public void read(String file)
 {
     try
     {
-		food = 0;
+		
         //access the file for reading
         RandomAccessFile read_file = new RandomAccessFile(file, "r");
 
@@ -42,7 +42,7 @@ public void read(String file)
         //if the file is empty, we close the file and end the process
         if (line == null)
         {
-            read_file.close()   ;
+            read_file.close()   
             return;
 		}
 
@@ -52,6 +52,7 @@ public void read(String file)
         int width = Integer.parseInt(parts[0]);
         int height = Integer.parseInt(parts[1]);
 
+		this.food = 0;
         this.board = new char[height][width];
 
 
