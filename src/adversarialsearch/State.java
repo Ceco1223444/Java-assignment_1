@@ -32,6 +32,7 @@ public void read(String file)
 {
     try
     {
+		food = 0;
         //access the file for reading
         RandomAccessFile read_file = new RandomAccessFile(file, "r");
 
