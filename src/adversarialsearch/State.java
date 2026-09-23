@@ -42,7 +42,7 @@ public void read(String file)
         //if the file is empty, we close the file and end the process
         if (line == null)
         {
-            read_file.close()   
+            read_file.close();   
             return;
 		}
 
